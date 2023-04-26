@@ -32,19 +32,6 @@
             position: relative;
             z-index: 3;
         }
-        &::before {
-            content: '';
-            position: absolute;
-            height: 548px;
-            width: 548px;
-            top: -56px;
-            border-radius: 50%;
-            background-color: $brand-color;
-            opacity: 0.1;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
     }
     .partners {
         padding-top: 136px;
@@ -60,6 +47,20 @@
 @media(max-width: 991px) {
     .hero {
         padding-top: 64px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            width: 100vw;
+            height: 300px;
+            background-color: $brand-color;
+            z-index: -1;
+        }
+        .background {    
+            svg {
+                height: 700px;
+            }
+        }
         .hero-text-container {
             margin: 0px auto;
             text-align: center;
@@ -83,6 +84,9 @@
             p {
                 font-size: 16px;
             }
+        }
+        .default-btn{
+            margin-bottom: 32px;
         }
     }
 }

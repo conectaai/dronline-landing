@@ -29,3 +29,14 @@
         margin: 64px auto 0px auto;
     }
 }
+
+@media(max-width: 991px) {
+    .our-software {
+        .software-card {
+            margin-bottom: 24px;
+        }
+        .default-btn {
+            margin-top: 24px;
+        }
+    }
+}

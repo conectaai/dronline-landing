@@ -26,6 +26,8 @@
         width: fit-content;
         margin: 0px auto;
         margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
         .nav-link {
             border-radius: 16px;
             width: 248px;
@@ -45,6 +47,7 @@
             background-image: url('../../images/star.svg');
             background-repeat: no-repeat;
             background-position: 24px 38px;
+            margin-bottom: 24px;
             &.active {
                 background-color: rgba(108, 117, 125, 0.12);
                 border-color: #EBE9F1;
@@ -65,12 +68,8 @@
         p {
             font-size: 16px;
         }
-        .nav-tabs {
-            .nav-link {
-                width: 120px;
-                height: 56px;
-                font-size: 14px;
-            }
+        .nav-item {
+            width: 190px;
         }
     } 
 }

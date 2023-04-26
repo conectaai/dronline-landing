@@ -18,10 +18,10 @@ export default function OurInterfaces() {
       onSelect={(k: any) => setKey(k)}
     >
       <Tab eventKey="consults" title="Agendamento de consultas">
-        <img src={systemPrint} alt="hero" />
+        <img src={systemPrint} alt="imagem consulta" />
       </Tab>
       <Tab eventKey="eletronic" title="Prontuário eletrônico">
-        <img src={systemPrint} alt="hero" />
+        <img src={systemPrint} alt="prontuario eletrônico" />
       </Tab>
       <Tab eventKey="online" title="Atendimento online integrado">
         <img src={systemPrint} alt="hero" />
