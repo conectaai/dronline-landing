@@ -1,0 +1,76 @@
+@import '../../styles/default.scss', '../../styles/typography.scss', '../../styles/spacing.scss';
+
+.our-interfaces {
+    background-color: $brand-color;
+    padding-top: 80px;
+    padding-bottom: 96px;
+    margin-top: 108px;
+    p {
+        color: $text-color-3;
+        max-width: 644px;
+        text-align: center;
+    }
+    h2 {
+        color: $white;
+    }
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .default-btn {
+        margin: 0px auto;
+        margin-top: 40px;
+    }
+    .nav-tabs {
+        border: none;
+        width: fit-content;
+        margin: 0px auto;
+        margin-bottom: 40px;
+        .nav-link {
+            border-radius: 16px;
+            width: 248px;
+            height: 100px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            letter-spacing: 0.4px;
+            background: rgba(30, 30, 30, 0.12);
+            color: $white;
+            transition: 0.3s ease-in-out;
+            border: 1px solid transparent;
+            margin: 0px 8px;
+            padding-left: 64px;
+            padding-right: 8px;
+            background-image: url('../../images/star.svg');
+            background-repeat: no-repeat;
+            background-position: 24px 38px;
+            &.active {
+                background-color: rgba(108, 117, 125, 0.12);
+                border-color: #EBE9F1;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .our-interfaces {
+        padding-top: 56px;
+        padding-bottom: 48px;
+        margin-top: 56px;
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .nav-tabs {
+            .nav-link {
+                width: 120px;
+                height: 56px;
+                font-size: 14px;
+            }
+        }
+    } 
+}

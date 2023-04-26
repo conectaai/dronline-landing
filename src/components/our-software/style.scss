@@ -1,0 +1,31 @@
+@import '../../styles/default.scss', '../../styles/typography.scss', '../../styles/spacing.scss';
+
+.our-software {
+    padding-top: 84px;
+    h2 {
+        text-align: center;
+    }
+    .software-card {
+        border-radius: 16px;
+        overflow: hidden;
+        .software-card-image {
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        .software-card-content {
+            padding: 24px;
+            padding-bottom: 40px;
+            background-color: $gray-light;
+            p {
+                margin-top: 8px;
+                max-width: 340px;
+            }
+        }
+    }
+    .default-btn {
+        margin: 64px auto 0px auto;
+    }
+}

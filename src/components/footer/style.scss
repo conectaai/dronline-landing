@@ -1,0 +1,93 @@
+@import '../../styles/default.scss', '../../styles/typography.scss';
+
+footer {
+    margin-top: 104px;
+    .footer-logo {
+        height: 56px;
+        width: 144px;
+        object-fit: contain;
+    }
+    .footer-info {
+        border-top: 1px solid #EBE9F1;
+        margin-top: 24px;
+        padding-top: 32px;
+        padding-bottom: 64px;
+        ul {
+            margin-bottom: 0px;
+            list-style: none;
+            padding-left: 0px;
+            &:first-child {
+                li {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 0%;
+                        background-color: $text-color-2;
+                        bottom: 0px;
+                        left: 0px;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            li {
+                display: inline-block;
+                margin-right: 32px;
+                a {
+                    color: $text-color-2;
+                }
+            }
+        }
+    }
+    .social-list {
+        li {
+            margin-right: 24px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                transform: translateY(-4px);
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+            a {
+            
+                i {
+                    color: $black;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    footer {
+        margin-top: 64px;
+        .footer-logo {
+            margin: 0px auto;
+            display: block;
+        }
+        .footer-info {
+            flex-direction: column;
+            ul {
+                &:first-child {
+                    li {
+                        display: block;
+                        text-align: center;
+                        margin-right: 0px;
+                        margin-bottom: 16px;
+                        &:last-child {
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

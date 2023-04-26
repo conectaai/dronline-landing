@@ -1,0 +1,50 @@
+@import '../../styles/default.scss', '../../styles/typography.scss', '../../styles/spacing.scss';
+
+.innovative-solution {
+    padding-top: 136px;
+    p, h2 {
+        max-width: 562px;
+    }
+    .banner  {
+        margin-top: 146px;
+    }
+}
+
+@media(max-width: 991px) {
+    .innovative-solution {
+        text-align: center;
+        padding-top: 64px;
+        .banner {
+            margin-top: 64px;
+        }
+        img {
+            margin: 0px auto;
+            margin-bottom: 32px;
+            display: block;
+        }
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .default-btn {
+            margin-left: auto;
+            margin-right: auto;
+            height: 56px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .innovative-solution {
+        .title-32-medium {
+            font-size: 26px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}

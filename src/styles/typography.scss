@@ -1,0 +1,59 @@
+@import './colors.scss';
+
+$font-family-1: 'Montserrat', sans-serif;
+
+.hero-title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+
+.title-42-medium {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    color: $white;
+}
+
+.title-40-medium {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -1px;
+    color: $brand-color;
+}
+
+.title-32-medium {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -1px;
+}
+
+.text-18-regular {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.text-18-semi-bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.text-16-medium {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: $text-color-2;
+}
+
+.text-14-regular {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+}
